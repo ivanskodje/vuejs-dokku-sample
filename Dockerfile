@@ -44,7 +44,7 @@ RUN npm init -y && \
 COPY --from=build /app/dist /app
 
 # Expose port
-EXPOSE 8080
+EXPOSE 80
 
 # Set the startup command
 CMD ["./node_modules/.bin/http-server"]
